@@ -4,40 +4,64 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <title>Checkout Page</title>
 </head>
 <body>
-  <section>
-    <h1>Checkout</h1>
-    <div>
+  <header class="container">
+    <h1 class="title">Checkout</h1>
+  </header>
+
+  <section class="container">
+    <div class="div__forms">
       <form>
-        <p>Contact Information</p>
-        <label for="email">E-mail</label>
-        <input type="email" id="email" placeholder="Enter your email..." required>
+        <p class="forms__title">Contact Information</p>
+        <label for="email" class="forms__label">E-mail</label>
+        <input type="email" id="email" placeholder="Enter your email..." required 
+        class="forms__input material-icons">
 
-        <label for="phone">Phone</label>
-        <input type="text" id="phone" placeholder="Enter your phone..." required>
+        <label for="phone" class="forms__label">Phone</label>
+        <input type="text" id="phone" placeholder="Enter your phone..." required
+        class="forms__input">
 
-        <p>Shipping adress</p>
-        <label for="name">Full name</label>
-        <input type="text" id="name" placeholder="Your full name.." required>
+        <p class="forms__title">Shipping address</p>
+        <label for="name" class="forms__label">Full name</label>
+        <input type="text" id="name" placeholder="Your full name..." required
+        class="forms__input">
 
-        <label for="adress">Adress</label>
-        <input type="text" id="adress" placeholder="Your adress.." required>
+        <label for="address" class="forms__label">Address</label>
+        <input type="text" id="address" placeholder="Your address..." required
+        class="forms__input">
 
-        <label for="city">City</label>
-        <input type="text" id="city" placeholder="Your city.." required>
+        <label for="city" class="forms__label">City</label>
+        <input type="text" id="city" placeholder="Your city..." required
+        class="forms__input">
         
-        <label for="country">Country</label>
-        <select name="country" id="country" required >
-          <option value="" selected disabled>Your country..</option>
-          <option value="germany">Germany</option>
-          <option value="brazil" >Brazil</option>
-          <option value="alemanha">Italy</option>
-        </select>
+        <div class="div__forms__last__info">
+          <div class="last__info__country">
+            <label for="country" class="forms__label">Country</label>
+            <select name="country" id="country" required class="forms__input">
+              <option value="" selected disabled>Your country...</option>
+              <option value="germany">Germany</option>
+              <option value="brazil" >Brazil</option>
+              <option value="italy">Italy</option>
+            </select>
+          </div>
 
-        <label for="postalcode">Postal code</label>
-        <input type="text" id="postalcode" placeholder="Your postal code.." required>
+          <div class="last__info__postalcode">
+            <label for="postalcode" class="forms__label">Postal code</label>
+            <input type="text" id="postalcode" placeholder="Your postal code..." required
+            class="forms__input">
+          </div>
+
+        </div>
+
+
 
         <div>
           <input type="checkbox" id="save">
@@ -48,13 +72,17 @@
       </form>
     </div>
 
-    <div>
+    <div class="div__items">
       <div>
         <img src="img/photo1.png" alt="checkbox-item">
         <p>Vintage Backbag</p>
         <span>$54.99</span>
         <span>$94.99</span>
-        <div>1</div>
+        <div>
+          <button>-</button>
+          1
+          <button>+</button>
+        </div>
       </div>
 
       <div>
@@ -62,7 +90,11 @@
         <p>Levi Shoes</p>
         <span>$74.99</span>
         <span>$124.99</span>
-        <div>1</div>
+        <div>
+          <button>-</button>
+          1
+          <button>+</button>
+        </div>
       </div>
 
       <div>
@@ -76,7 +108,7 @@
     </div>
   </section>
 
-  <footer>
+  <footer class="container">
     <span>created by Ig0or - devChallenges.io</span>
   </footer>
 </body>

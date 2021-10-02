@@ -1,0 +1,125 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* header styles */
+
+.title {
+  margin: 64px 15px 50px 15px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 2.25rem;
+  color: #4e5150;
+}
+
+/* section styles */
+
+section {
+  display: flex;
+}
+
+/* forms styles */
+
+.div__forms {
+  flex: 2;
+}
+
+.div__items {
+  flex: 1;
+}
+
+.div__forms form input,
+select,
+label {
+  display: flex;
+}
+
+.forms__title {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #333333;
+  font-size: 1.125rem;
+  margin: 0 15px 15px 15px;
+}
+
+.forms__label {
+  margin: 0 15px 7px 15px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #4f4f4f;
+  font-size: 0.75rem;
+}
+
+.forms__input {
+  border-radius: 12px;
+  border: 1px solid #828282;
+  outline: none;
+  background: no-repeat;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  color: #333333;
+  width: 50%;
+  padding: 15px;
+  padding-left: 45px;
+  margin: 0px 15px 20px 15px;
+}
+
+#email {
+  background: url(../img/email.svg) no-repeat;
+  background-position: 14px center;
+}
+
+#phone {
+  background: url(../img/phone.svg) no-repeat;
+  background-position: 14px center;
+  margin-bottom: 60px;
+}
+
+#name {
+  background: url(../img/name.svg) no-repeat;
+  background-position: 14px center;
+}
+
+#address {
+  background: url(../img/address.svg) no-repeat;
+  background-position: 14px center;
+}
+
+#city {
+  background: url(../img/city.svg) no-repeat;
+  background-position: 14px center;
+}
+
+#country {
+  background: url(../img/country.svg) no-repeat;
+  background-position: 14px center;
+}
+
+#postalcode {
+  background: url(../img/postalcode.svg) no-repeat;
+  background-position: 14px center;
+}
+
+.div__forms__last__info {
+  display: flex;
+  width: 61%;
+}
+
+.last__info__country {
+  flex: 1;
+}
+
+.last__info__postalcode {
+  flex: 1;
+}
+
+.last__info__country select {
+  width: calc(100% - 30px);
+}
+
+.last__info__postalcode input {
+  width: 65%;
+}
