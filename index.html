@@ -17,8 +17,8 @@
     <h1 class="title">Checkout</h1>
   </header>
 
-  <section class="container">
-    <div class="div__forms">
+  <main class="container">
+    <section class="section__forms">
       <form>
         <p class="forms__title">Contact Information</p>
         <label for="email" class="forms__label">E-mail</label>
@@ -42,7 +42,7 @@
         <input type="text" id="city" placeholder="Your city..." required
         class="forms__input">
         
-        <div class="div__forms__last__info">
+        <div class="section__forms__last__info">
           <div class="last__info__country">
             <label for="country" class="forms__label">Country</label>
             <select name="country" id="country" required class="forms__input">
@@ -58,55 +58,56 @@
             <input type="text" id="postalcode" placeholder="Your postal code..." required
             class="forms__input">
           </div>
-
         </div>
 
-
-
-        <div>
+        <div class="savebutton">
           <input type="checkbox" id="save">
           <label for="save">Save this information for next time</label>
         </div>
 
-        <button type="submit">Continue</button>
+        <button type="submit" class="continuebutton">Continue</button>
       </form>
-    </div>
+    </section>
 
-    <div class="div__items">
-      <div>
+    <section class="section__items">
+      <div class="items__child">
         <img src="img/photo1.png" alt="checkbox-item">
-        <p>Vintage Backbag</p>
-        <span>$54.99</span>
-        <span>$94.99</span>
         <div>
-          <button>-</button>
-          1
-          <button>+</button>
+          <p>Vintage Backbag</p>
+          <span>$54.99</span>
+          <span>$94.99</span>
+          <div class="items__child__qtd">
+            <p>-</p>
+            <p>1</p>
+            <p>+</p>
+          </div>
         </div>
       </div>
 
-      <div>
+      <div class="items__child">
         <img src="img/photo1.png" alt="checkbox-item">
-        <p>Levi Shoes</p>
-        <span>$74.99</span>
-        <span>$124.99</span>
         <div>
-          <button>-</button>
-          1
-          <button>+</button>
+          <p>Levi Shoes</p>
+          <span>$74.99</span>
+          <span>$124.99</span>
+          <div class="items__child__qtd">
+            <p>-</p>
+            <p>1</p>
+            <p>+</p>
+          </div>
         </div>
       </div>
 
-      <div>
+      <div class="items__child__info">
         <p>Shipping</p>
         <span>$19</span>
       </div>
-      <div>
+      <div class="items__child__info">
         <p>Total</p>
         <span>$148.98</span>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="container">
     <span>created by Ig0or - devChallenges.io</span>
