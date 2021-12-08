@@ -1,4 +1,4 @@
-# Checkout Page- devchallenges.io
+# Checkout Page - devchallenges.io
 
 Projeto front-end desenvolvido para o desafio "Checkout Page" da devchallenges.io.
 
